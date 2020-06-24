@@ -1,0 +1,26 @@
+{
+  "user": "lc.testanalyst@gmail.com",
+  "password" : "123teste",
+  "msgSucesso" : "Testar",
+  "msgErro" : "E-mail ou senha inválidos.",
+
+  "idProjeto": "Test_1",
+  "nomeProjeto": "Projeto Cypress",
+  "descricaoProjeto": "Automacao Cypress + JS",
+  "feature": "Feature",
+  "tipoProjeto": "Web",
+
+  "titulo_CT":"Titulo Teste",
+  "descricao_CT":"Descricao Teste",
+  "resultadoEsperado_CT":"Executado com sucesso",
+  "newFeature":"IncluirCT",
+  "selectFeature":"cadastrar nova",
+
+  "testador": "laedyceci@gmail.com",
+  "testadorInvalido": "ceciliafbn@gmail.com",
+
+  "nomeRelease": "Release",
+  "InstrucoesRelease": "Instrucoes Teste Cypress",
+
+  "tituloBug": "titulo Release - Cypress automacao"
+}

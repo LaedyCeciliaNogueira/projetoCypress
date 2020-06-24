@@ -1,0 +1,21 @@
+{
+  "name": "curso-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run",
+    "dashboard": "cypress run --record --key 9d1af3cf-70a2-4f87-8124-5f70953efdc1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.8.3",
+    "xpath": "0.0.27"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.0"
+  }
+}
