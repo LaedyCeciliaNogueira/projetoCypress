@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './rastreio-commands'
 import './commands-crowdtest'
+import './commands-api'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
