@@ -1,0 +1,4 @@
+//Redimensionar a tela:
+- No cypress.json insere os códigos abaixo:
+    "viewportWidth": 3600,
+    "viewportHeight": 720,

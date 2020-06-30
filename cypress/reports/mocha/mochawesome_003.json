@@ -1,66 +1,90 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2020-06-29T22:44:52.923Z",
-    "end": "2020-06-29T22:45:57.359Z",
-    "duration": 64436,
-    "testsRegistered": 1,
-    "passPercent": 100,
+    "start": "2020-06-30T17:57:58.666Z",
+    "end": "2020-06-30T17:58:00.381Z",
+    "duration": 1715,
+    "testsRegistered": 2,
+    "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
-    "skipped": 0,
-    "hasSkipped": false
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
   },
   "results": [
     {
-      "uuid": "d3148833-eb5e-4cd7-aa1b-f34167e90874",
+      "uuid": "33de50e5-2446-486f-846f-323c3fa08751",
       "title": "",
-      "fullFile": "cypress/integration/test-crowdtest/addProjetoCompleto.spec.js",
-      "file": "cypress/integration/test-crowdtest/addProjetoCompleto.spec.js",
+      "fullFile": "cypress/integration/web/rastreio/rastreio-correios.spec.js",
+      "file": "cypress/integration/web/rastreio/rastreio-correios.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6f965947-1b86-4311-89bb-5b2094acb80a",
-          "title": "Projeto Completo",
+          "uuid": "ccd57cde-fe12-4d33-be4d-fe5c1dfa435e",
+          "title": "Rastreio de Encomenda - Correios",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Adiciona Projeto Completo",
-              "fullTitle": "Projeto Completo Adiciona Projeto Completo",
+              "title": "Rastreio de Encomenda ",
+              "fullTitle": "Rastreio de Encomenda - Correios Rastreio de Encomenda ",
               "timedOut": null,
-              "duration": 62109,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
+              "duration": 1676,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var _this = this;\ncy.insereCodigo(\"\".concat(prod));\nif (\"\".concat(prod) == 'OJ053980980BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto1, \"Entregue\");\n  });\n} else if (\"\".concat(prod) == 'OJ693893698BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto2, \"Entregue\");\n  });\n} else {\n  console.log(\"\".concat(prod, \"  Erro\"));\n}",
+              "err": {
+                "message": "CypressError: cy.visit() failed trying to load:\n\nhttps://www2.correios.com.br/sistemas/rastreamento/default.cfm\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Rastreio de Encomenda - Cor...'",
+                "estack": "CypressError: cy.visit() failed trying to load:\n\nhttps://www2.correios.com.br/sistemas/rastreamento/default.cfm\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not '2xx'.\n\nIf you do not want status codes to cause failures pass the option: 'failOnStatusCode: false'\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Rastreio de Encomenda - Cor...'\n    at Object.cypressErr (https://regres.in/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (https://regres.in/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (https://regres.in/__cypress/runner/cypress_runner.js:86194:17)\n    at https://regres.in/__cypress/runner/cypress_runner.js:71493:31\n    at visitFailedByErr (https://regres.in/__cypress/runner/cypress_runner.js:71006:12)\n    at https://regres.in/__cypress/runner/cypress_runner.js:71474:22\n    at tryCatcher (https://regres.in/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (https://regres.in/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (https://regres.in/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (https://regres.in/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (https://regres.in/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://regres.in/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://regres.in/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (https://regres.in/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "fb7c1bba-648a-4d24-9c53-458e35b15223",
+              "parentUUID": "ccd57cde-fe12-4d33-be4d-fe5c1dfa435e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rastreio de Encomenda ",
+              "fullTitle": "Rastreio de Encomenda - Correios Rastreio de Encomenda ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.fixture('crowdData').as('usuario').then(function (usuario) {\n  cy.incluirProjeto(usuario.idProjeto + id, usuario.nomeProjeto, usuario.descricaoProjeto, usuario.tipoProjeto, 'IncluirCT');\n  cy.incluirEquipe(usuario.testador);\n  cy.incluiCasoDeTeste(usuario.titulo_CT, usuario.descricao_CT, usuario.resultadoEsperado_CT, usuario.newFeature, usuario.selectFeature);\n  cy.selecionaMenuReleaseProjeto();\n  cy.incluirRelease(usuario.nomeRelease + id, usuario.InstrucoesRelease);\n  cy.acessaMenuBugTrackerProjeto();\n  cy.incluirBug(usuario.tituloBug);\n  cy.ValidaBugCadastrado('cadastrada com sucesso.');\n});",
+              "code": "var _this = this;\ncy.insereCodigo(\"\".concat(prod));\nif (\"\".concat(prod) == 'OJ053980980BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto1, \"Entregue\");\n  });\n} else if (\"\".concat(prod) == 'OJ693893698BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto2, \"Entregue\");\n  });\n} else {\n  console.log(\"\".concat(prod, \"  Erro\"));\n}",
               "err": {},
-              "uuid": "d09c2a50-6ed0-4585-9cf3-416a149c89e9",
-              "parentUUID": "6f965947-1b86-4311-89bb-5b2094acb80a",
+              "uuid": "76089fc9-5666-4327-8078-eb04ca741c24",
+              "parentUUID": "ccd57cde-fe12-4d33-be4d-fe5c1dfa435e",
               "isHook": false,
-              "skipped": false
+              "skipped": true
             }
           ],
           "suites": [],
-          "passes": [
-            "d09c2a50-6ed0-4585-9cf3-416a149c89e9"
+          "passes": [],
+          "failures": [
+            "fb7c1bba-648a-4d24-9c53-458e35b15223"
           ],
-          "failures": [],
           "pending": [],
-          "skipped": [],
-          "duration": 62109,
+          "skipped": [
+            "76089fc9-5666-4327-8078-eb04ca741c24"
+          ],
+          "duration": 1676,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

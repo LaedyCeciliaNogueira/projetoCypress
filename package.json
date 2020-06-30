@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "open": "cypress open",
-    "test": "cypress run",
-    "dashboard": "cypress run --record --key 9d1af3cf-70a2-4f87-8124-5f70953efdc1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,9 +19,11 @@
     "mochawesome-report-generator": "^5.1.0"
   },
   "scripts": {
+    "open": "cypress open",
+    "dashboard": "cypress run --record --key 9d1af3cf-70a2-4f87-8124-5f70953efdc1",
     "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
+    "cy": "cypress run",
     "combine-reports": "mochawesome-mergecypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",

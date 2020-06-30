@@ -1,8 +1,8 @@
 {
-  "baseUrl": "https://petstore.swagger.io/v2",
-  "projectId": "qn27xo",
+    "baseUrl": "https://regres.in/api",
+    "projectId": "qn27xo",
 
-  "reporter": "cypress-multi-reporters",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
