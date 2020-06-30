@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:43:57.901Z",
+    "end": "2020-06-29T22:44:00.335Z",
+    "duration": 2434,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b135836-e625-4740-8a35-d8a2d48f0047",
+      "title": "",
+      "fullFile": "cypress/integration/api-petTest/storeApi.spec.js",
+      "file": "cypress/integration/api-petTest/storeApi.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6fa6f9d9-04de-4ef7-be87-7f58658c218a",
+          "title": "Store Request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post - StoreOrder",
+              "fullTitle": "Store Request Post - StoreOrder",
+              "timedOut": null,
+              "duration": 792,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://petstore.swagger.io/v2/store/order',\n  body: {\n    \"id\": id,\n    \"petId\": id,\n    \"quantity\": 0,\n    \"shipDate\": \"2020-06-29T18:22:06.435Z\",\n    \"status\": \"placed\",\n    \"complete\": true\n  }\n}).then(function (res) {\n  return console.log(\"POST: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "0ad083de-6a6d-479a-9d84-34795c46ac39",
+              "parentUUID": "6fa6f9d9-04de-4ef7-be87-7f58658c218a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get - StoreOrderId",
+              "fullTitle": "Store Request Get - StoreOrderId",
+              "timedOut": null,
+              "duration": 548,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://petstore.swagger.io/v2/store/order/' + id\n}).then(function (res) {\n  return console.log(\"GET: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "400b2b41-16e2-47d2-a506-e63a621bae7e",
+              "parentUUID": "6fa6f9d9-04de-4ef7-be87-7f58658c218a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete - StoreOrderId",
+              "fullTitle": "Store Request Delete - StoreOrderId",
+              "timedOut": null,
+              "duration": 494,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'DELETE',\n  url: 'https://petstore.swagger.io/v2/store/order/' + id\n}).then(function (res) {\n  return console.log(\"DELETE: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "b0144e4c-c906-490b-87ad-a12cac4f14d7",
+              "parentUUID": "6fa6f9d9-04de-4ef7-be87-7f58658c218a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get - StoreInventory",
+              "fullTitle": "Store Request Get - StoreInventory",
+              "timedOut": null,
+              "duration": 540,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://petstore.swagger.io/v2/store/inventory'\n}).then(function (res) {\n  return console.log(\"GET: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "53808682-4c7a-4eda-ac91-f57c362149ad",
+              "parentUUID": "6fa6f9d9-04de-4ef7-be87-7f58658c218a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ad083de-6a6d-479a-9d84-34795c46ac39",
+            "400b2b41-16e2-47d2-a506-e63a621bae7e",
+            "b0144e4c-c906-490b-87ad-a12cac4f14d7",
+            "53808682-4c7a-4eda-ac91-f57c362149ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2374,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

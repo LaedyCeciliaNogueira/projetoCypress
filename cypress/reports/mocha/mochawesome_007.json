@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:48:48.202Z",
+    "end": "2020-06-29T22:49:50.414Z",
+    "duration": 62212,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "2c798194-6230-454b-9ff6-6387d88296c2",
+      "title": "",
+      "fullFile": "cypress/integration/test-crowdtest/incluiEquipeDoProjeto.spec.js",
+      "file": "cypress/integration/test-crowdtest/incluiEquipeDoProjeto.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f19e6005-cd58-40ab-901d-4e669a014331",
+          "title": "Incluir Equipe do projeto",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Inclui Equipe do projeto",
+              "fullTitle": "Incluir Equipe do projeto Inclui Equipe do projeto",
+              "timedOut": null,
+              "duration": 60504,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('crowdData').as('usuario').then(function (usuario) {\n  cy.incluirProjeto(usuario.idProjeto + id, usuario.nomeProjeto, usuario.descricaoProjeto, usuario.tipoProjeto, usuario.feature + id);\n  cy.incluirEquipe(usuario.testador);\n  cy.ValidaEquipe(usuario.testador);\n});",
+              "err": {
+                "message": "CypressError: Timed out after waiting '60000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '60000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Incluir Equipe do projeto'",
+                "estack": "CypressError: Timed out after waiting '60000ms' for your remote page to load.\n\nYour page did not fire its 'load' event within '60000ms'.\n\nYou can try increasing the 'pageLoadTimeout' value in 'cypress.json' to wait longer.\n\nBrowsers will not fire the 'load' event until all stylesheets and scripts are done downloading.\n\nWhen this 'load' event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: 'Incluir Equipe do projeto'\n    at Object.cypressErr (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:86207:11)\n    at Object.throwErr (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:86162:18)\n    at Object.throwErrByPath (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:86194:17)\n    at timedOutWaitingForPageLoad (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:70751:17)\n    at http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:71530:16\n    at tryCatcher (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:120203:23)\n    at http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:115344:41\n    at tryCatcher (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:120203:23)\n    at Promise._settlePromiseFromHandler (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:118139:31)\n    at Promise._settlePromise (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:118196:18)\n    at Promise._settlePromise0 (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:118241:10)\n    at Promise._settlePromises (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:118316:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:114928:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:114938:10)\n    at Async.drainQueues (http://blackmirror.crowdtest.me.s3-website-us-east-1.amazonaws.com/__cypress/runner/cypress_runner.js:114812:14)",
+                "diff": null
+              },
+              "uuid": "89abc617-6d61-4502-9363-643164d2d0b7",
+              "parentUUID": "f19e6005-cd58-40ab-901d-4e669a014331",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Inclui Equipe do projeto inválida",
+              "fullTitle": "Incluir Equipe do projeto Inclui Equipe do projeto inválida",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('crowdData').as('usuario').then(function (usuario) {\n  cy.incluirProjeto(id + \"invalido\", usuario.nomeProjeto, usuario.descricaoProjeto, usuario.tipoProjeto, usuario.feature + id);\n  cy.incluirEquipe(usuario.testadorInvalido);\n  cy.ValidaEquipeInvalida('não está cadastrado');\n  cy.fecharPopUp();\n});",
+              "err": {},
+              "uuid": "8aac977c-fe8c-4242-a18f-a27fca2731d6",
+              "parentUUID": "f19e6005-cd58-40ab-901d-4e669a014331",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "89abc617-6d61-4502-9363-643164d2d0b7"
+          ],
+          "pending": [],
+          "skipped": [
+            "8aac977c-fe8c-4242-a18f-a27fca2731d6"
+          ],
+          "duration": 60504,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

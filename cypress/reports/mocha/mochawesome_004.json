@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:46:16.237Z",
+    "end": "2020-06-29T22:46:57.820Z",
+    "duration": 41583,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "452224da-0163-48c1-899b-67811f21d15c",
+      "title": "",
+      "fullFile": "cypress/integration/test-crowdtest/deletaProjetos.spec.js",
+      "file": "cypress/integration/test-crowdtest/deletaProjetos.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a5100ef6-cb58-419e-96c2-190b0a0d14bc",
+          "title": "Delete Projetos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deleta Projetos",
+              "fullTitle": "Delete Projetos Deleta Projetos",
+              "timedOut": null,
+              "duration": 38644,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.deletaProjetos();\ncy.validaExclusao();",
+              "err": {},
+              "uuid": "0e799b00-f782-4341-a2f7-6a0ec59874ad",
+              "parentUUID": "a5100ef6-cb58-419e-96c2-190b0a0d14bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e799b00-f782-4341-a2f7-6a0ec59874ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38644,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

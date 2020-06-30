@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:44:03.980Z",
+    "end": "2020-06-29T22:44:42.851Z",
+    "duration": 38871,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "12032f17-7930-4b51-904e-3164f028abbc",
+      "title": "",
+      "fullFile": "cypress/integration/rastreio/rastreio-correios.spec.js",
+      "file": "cypress/integration/rastreio/rastreio-correios.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cf76e431-f231-4eb3-b0ae-82c2b4c140ec",
+          "title": "Rastreio de Encomenda - Correios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Rastreio de Encomenda ",
+              "fullTitle": "Rastreio de Encomenda - Correios Rastreio de Encomenda ",
+              "timedOut": null,
+              "duration": 34855,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _this = this;\ncy.insereCodigo(\"\".concat(prod));\nif (\"\".concat(prod) == 'OJ053980980BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto1, \"Entregue\");\n  });\n} else if (\"\".concat(prod) == 'OJ693893698BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto2, \"Entregue\");\n  });\n} else {\n  console.log(\"\".concat(prod, \"  Erro\"));\n}",
+              "err": {},
+              "uuid": "f812df19-0186-4ca7-8b02-7046b76ac278",
+              "parentUUID": "cf76e431-f231-4eb3-b0ae-82c2b4c140ec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Rastreio de Encomenda ",
+              "fullTitle": "Rastreio de Encomenda - Correios Rastreio de Encomenda ",
+              "timedOut": null,
+              "duration": 2080,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _this = this;\ncy.insereCodigo(\"\".concat(prod));\nif (\"\".concat(prod) == 'OJ053980980BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto1, \"Entregue\");\n  });\n} else if (\"\".concat(prod) == 'OJ693893698BR') {\n  cy.fixture('rastreioData').as('data').then(function () {\n    cy.validaRastreio(_this.data.produto2, \"Entregue\");\n  });\n} else {\n  console.log(\"\".concat(prod, \"  Erro\"));\n}",
+              "err": {},
+              "uuid": "5ba53683-4f98-4142-b85e-94980d1d1403",
+              "parentUUID": "cf76e431-f231-4eb3-b0ae-82c2b4c140ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f812df19-0186-4ca7-8b02-7046b76ac278",
+            "5ba53683-4f98-4142-b85e-94980d1d1403"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36935,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

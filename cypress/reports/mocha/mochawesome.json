@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:43:49.244Z",
+    "end": "2020-06-29T22:43:53.321Z",
+    "duration": 4077,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b2322242-1af3-4dd6-bf7f-cea782c8783a",
+      "title": "",
+      "fullFile": "cypress/integration/api-petTest/petApi.spec.js",
+      "file": "cypress/integration/api-petTest/petApi.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b2b49b03-3fa5-4876-ae3c-fa3235918bf1",
+          "title": "Pet Request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Post - Pet",
+              "fullTitle": "Pet Request Post - Pet",
+              "timedOut": null,
+              "duration": 1645,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://petstore.swagger.io/v2/pet/',\n  body: {\n    \"id\": id,\n    \"name\": name,\n    \"photoUrls\": [],\n    \"tags\": [],\n    \"status\": \"LIVE\"\n  }\n}).then(function (res) {\n  return console.log(\"POST: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "02a6f343-7971-49d5-87fd-6b9ac738185c",
+              "parentUUID": "b2b49b03-3fa5-4876-ae3c-fa3235918bf1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get - StatusPet",
+              "fullTitle": "Pet Request Get - StatusPet",
+              "timedOut": null,
+              "duration": 580,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://petstore.swagger.io/#/pet/findPetsByStatus'\n}).then(function (res) {\n  return console.log(\"GETSTATUS: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "de71b809-0615-4e07-9a00-c10b34aa287a",
+              "parentUUID": "b2b49b03-3fa5-4876-ae3c-fa3235918bf1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Get - PetId",
+              "fullTitle": "Pet Request Get - PetId",
+              "timedOut": null,
+              "duration": 1285,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://petstore.swagger.io/#/pet/' + id\n}).then(function (res) {\n  return console.log(\"GET: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "e55eb690-3318-4447-bc22-3202b2d115a3",
+              "parentUUID": "b2b49b03-3fa5-4876-ae3c-fa3235918bf1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete - PetId",
+              "fullTitle": "Pet Request Delete - PetId",
+              "timedOut": null,
+              "duration": 506,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'DELETE',\n  url: 'https://petstore.swagger.io/v2/pet/' + id\n}).then(function (res) {\n  return console.log(\"DELETE: \" + res);\n}).its('status').should('to.be.equal', 200);",
+              "err": {},
+              "uuid": "6993453b-9511-4be2-9631-e32ea0cf6f70",
+              "parentUUID": "b2b49b03-3fa5-4876-ae3c-fa3235918bf1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02a6f343-7971-49d5-87fd-6b9ac738185c",
+            "de71b809-0615-4e07-9a00-c10b34aa287a",
+            "e55eb690-3318-4447-bc22-3202b2d115a3",
+            "6993453b-9511-4be2-9631-e32ea0cf6f70"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4016,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

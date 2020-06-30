@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-29T22:44:52.923Z",
+    "end": "2020-06-29T22:45:57.359Z",
+    "duration": 64436,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d3148833-eb5e-4cd7-aa1b-f34167e90874",
+      "title": "",
+      "fullFile": "cypress/integration/test-crowdtest/addProjetoCompleto.spec.js",
+      "file": "cypress/integration/test-crowdtest/addProjetoCompleto.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f965947-1b86-4311-89bb-5b2094acb80a",
+          "title": "Projeto Completo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adiciona Projeto Completo",
+              "fullTitle": "Projeto Completo Adiciona Projeto Completo",
+              "timedOut": null,
+              "duration": 62109,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('crowdData').as('usuario').then(function (usuario) {\n  cy.incluirProjeto(usuario.idProjeto + id, usuario.nomeProjeto, usuario.descricaoProjeto, usuario.tipoProjeto, 'IncluirCT');\n  cy.incluirEquipe(usuario.testador);\n  cy.incluiCasoDeTeste(usuario.titulo_CT, usuario.descricao_CT, usuario.resultadoEsperado_CT, usuario.newFeature, usuario.selectFeature);\n  cy.selecionaMenuReleaseProjeto();\n  cy.incluirRelease(usuario.nomeRelease + id, usuario.InstrucoesRelease);\n  cy.acessaMenuBugTrackerProjeto();\n  cy.incluirBug(usuario.tituloBug);\n  cy.ValidaBugCadastrado('cadastrada com sucesso.');\n});",
+              "err": {},
+              "uuid": "d09c2a50-6ed0-4585-9cf3-416a149c89e9",
+              "parentUUID": "6f965947-1b86-4311-89bb-5b2094acb80a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d09c2a50-6ed0-4585-9cf3-416a149c89e9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 62109,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

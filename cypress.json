@@ -1,4 +1,16 @@
 {
   "baseUrl": "https://petstore.swagger.io/v2",
-  "projectId": "qn27xo"
+  "projectId": "qn27xo",
+
+  "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": true,
+            "json": true
+        }
+    }
 }
