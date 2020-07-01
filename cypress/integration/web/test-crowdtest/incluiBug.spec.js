@@ -19,7 +19,6 @@ describe('Bug Tracker', ()=>{
       cy.incluirBug(usuario.tituloBug)
 
       cy.ValidaBugCadastrado('Ocorrência cadastrada com sucesso.')
-
     })
   })
 })
